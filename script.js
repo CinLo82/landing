@@ -1,4 +1,5 @@
-document.getElementById("icono").addEventListener("click", function() {
+document.getElementById("icono").addEventListener("click", function(e) {
+    e.preventDefault();
     let enlaces = document.getElementById("enlaces");
     if (enlaces.classList.contains("uno")) {
         enlaces.classList.remove("uno");
