@@ -17,8 +17,13 @@ nav{
 nav a {
     text-decoration: none;
     color: #fff;
-    display: inline-block;
+}
+
+.icono{
+    position: absolute;
+    display: block;
     animation: moverIzquierda 1s ease-in;
+    z-index: 100000000;   
 }
 
 header{
@@ -86,6 +91,30 @@ img{
     background: #642B73;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: circle(0% at 0 0);
+}
+
+.uno {
+    clip-path: circle(0% at 0 0);
+}
+
+.dos {
+    clip-path: circle(140% at 1% 0);
 }
 
 @keyframes moverIzquierda{
